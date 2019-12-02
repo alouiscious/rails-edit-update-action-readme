@@ -16,6 +16,7 @@ class ArticlesController < ApplicationController
     @article.title = params[:title]
     @article.description = params[:description]
     @article.save
+    binding.pry
     redirect_to article_path(@article)
   end
 
